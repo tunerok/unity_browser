@@ -3,7 +3,7 @@ Open source Unity3d web browser created by Vitaly Chashin https://bitbucket.org/
 
 Basic setup
 Import the package to Unity. There will be a few folders in Assets/SimpleWebBrowser. You can move/rename all of them, but in case of Assets/SimpleWebBrowser/PluginServer you will need to change the runtime and deployment paths in Scripts/BrowserEngine.cs and in Editor/BrowserPostBuild.cs:
-
+'''
  public void InitPlugin(int width, int height, string sharedfilename, int port, string initialURL)
         {
 
@@ -16,6 +16,7 @@ Import the package to Unity. There will be a few folders in Assets/SimpleWebBrow
 #else
 #if UNITY_EDITOR_32
         string PluginServerPath = Application.dataPath + @"\SimpleWebBrowser\PluginServer\x86";
+        '''
 The package contains two demo scenes, for the inworld and canvas browser; you can use them as a reference, or just drag one of the prefabs to the scene.
 
 Settings
@@ -87,4 +88,3 @@ Process pluginProcess = new Process()
             };
 Copy the CEF runtime from the appropriate folder in third_party to the SharedPluginServer output folder, and run the TestClient. It may crash for the first time (when Windows asks for network access), but after that it should work fine.
 
-Notes
