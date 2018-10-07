@@ -1,0 +1,581 @@
+html {overflow:hidden;}
+body
+{
+text-align: center;
+overflow:hidden;
+background-position:left top;
+background-color:#000000;
+background-repeat:no-repeat;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:20px;
+margin:0px 0px 0px 0px;
+border-style:none;
+color:#aaaaaa;
+
+}
+td.topcontent
+{
+	vertical-align: top;
+}
+td.centered
+{
+	vertical-align: middle;
+	text-align:center;
+}
+ 
+/*active image button*/
+img
+{
+	margin : 0;
+    padding : 0;
+}
+img.actimage
+{
+	display: block;
+	opacity:0.4;
+}
+img.actimagehover
+{
+	display: block;
+	opacity:1.0;
+}
+
+a.BUTTONLINK
+{
+	font-size:20px;
+	color:#cccccc;
+	display: block;
+	opacity:0.7;
+}
+a.BUTTONLINK:hover
+{
+	color:#ffffff;
+	opacity:1.0;
+}
+a.HOVERBUTTONLINK
+{
+	font-size:20px;
+	color:#cccccc;
+	display: block;
+	opacity:0.7;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 2px 2px transparent;
+}
+a.HOVERBUTTONLINK:hover
+{
+	font-size:20px;
+	color:#cccccc;
+	display: block;
+	opacity:0.7;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 2px 2px #4444AA;
+}
+a.selecteditem
+{
+	display: block;
+	color:#000000;
+	background-color:#cccccc;
+}
+
+a.mytelexmessage
+{
+	border:1px solid;
+	font-size:15px;
+	color:#cccccc;
+	background-color:#282800;
+	border-radius: 8px;
+	width:98%;
+	display:block;
+}
+a.notmytelexmessage
+{
+	border:1px solid;
+	font-size:15px;
+	color:#cccccc;
+	background-color:#03212c;
+	border-radius: 8px;
+	width:98%;
+	display:block;
+}
+a.MIDDLE2
+{
+	font-weight:bold;
+	font-size:22px;
+}
+a.MIDDLE3
+{
+	font-weight:bold;
+	font-size:14px;
+}
+a.BIG
+{
+	font-weight:bold;
+	font-size:32px;
+}
+DIV.modalwindow
+{
+	border:1px;
+	z-index: 99990;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width :100%;
+	height: 120%;
+	background-color:#000000;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+DIV.modalwindow2
+{
+	border:1px;
+	z-index: 99991;
+	display: block;
+	position: absolute;
+	;top: 0px;
+	;left: 0px;
+	;width :40%;
+	;height: 60%;
+	background-color:#000000;
+}
+DIV.SCROLLDIV
+{
+	border:1px solid;
+	border-radius: 8px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border-radius: 8px;
+}
+TABLE.modalwindowinternal
+{
+	border:2px solid;
+	width :100%;
+	height: 90%;
+	filter:alpha(opacity=100);
+	opacity:1.0;
+	background-color:#000000;
+}
+TABLE.inputblocktable
+{
+	border: 2px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px 5px #888888;
+	;background-color:#000000;
+	text-align: center;
+}
+TABLE.buttonframe
+{
+	border-spacing: 7px 11px;
+}
+TABLE.bordertable
+{
+	border:2px solid;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px 5px #AAAAAA;
+	background-color:#000000;
+}
+TABLE.screenkeyboardtable
+{
+	margin : 0;
+    padding : 0;
+	border-collapse : collapse;
+	border:2px solid;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px 5px #AAAAAA;
+	background-color:#000000;
+	-webkit-transform: scale(0.7, 0.7);
+}
+TABLE.screenkeyboardtable td
+{
+	padding:0 px;
+}
+
+TABLE.alarmbordertable
+{
+	border:2px solid;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px 5px #FF0000;
+	background-color:#000000;
+}
+
+TABLE.inputbordertable
+{
+	border: 2px solid transparent;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px 2px #444444;
+	background-color:#000000;
+}
+
+TABLE.inputbordertableactive
+{
+	border: 2px solid transparent;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px 2px #4444AA;
+	background-color:#000000;
+}
+
+img {vertical-align:middle;}
+/*dynamic buttons*/
+.togglebutton,.normalbutton
+{
+	display: block;
+	text-align: center;
+	width: 98%;
+	border-radius: 8px;
+	line-height:40px;
+	box-shadow: 0px 0px 4px 4px #888888;
+	background-color:#000000;
+	margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.togglebutton:hover,.normalbutton:hover
+{
+	display: block;
+	text-align: center;
+	width: 98%;
+	border-radius: 8px;
+	line-height:40px;
+	box-shadow: 0px 0px 4px 4px #4444AA;
+	background-color:#000000;
+	margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.togglebuttonset
+{
+	display: block;
+	text-align: center;
+	width: 98%;
+	border-radius: 8px;
+	line-height:40px;
+	box-shadow: 0px 0px 4px 4px #888888;
+	background-color:gray;
+	margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.togglebuttonset:hover
+{
+	display: block;
+	text-align: center;
+	width: 98%;
+	border-radius: 8px;
+	line-height:40px;
+	box-shadow: 0px 0px 4px 4px #4444AA;
+	background-color:white;
+	margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+
+.radioinput{
+font-size:20px;
+color:#ffffff;
+text-align: left;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+background-color:#000000;
+}
+
+.multiinput
+{
+overflow: hidden;
+font-size:20px;
+color:#ffffff;
+text-align: left;
+border-radius: 8px;
+background: none;
+background-color:#000000;
+}
+.multiinputupper
+{
+text-transform:uppercase;
+overflow: hidden;
+font-size:20px;
+color:#ffffff;
+text-align: left;
+border-radius: 8px;
+background: none;
+background-color:#000000;
+}
+
+/*start checkbox styles*/
+.squaredThree {
+	width: 20px;
+  left:-20px;
+	position: relative;
+}
+.squaredThree input[type=checkbox] {
+	visibility: hidden;
+}
+.squaredThree label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+  
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+
+	background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+	background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+	background: linear-gradient(top, #222 0%, #45484d 100%);
+}
+
+.squaredThree label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #00ff00;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+	opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+/*end checkbox styles*/
+
+/* Main menu */
+#menu
+{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 0 0;
+        list-style: none;
+        background: #111;
+        background: -moz-linear-gradient(#444, #111);
+		background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+        background: -webkit-linear-gradient(#444, #111);
+        background: -o-linear-gradient(#444, #111);
+        background: -ms-linear-gradient(#444, #111);
+        background: linear-gradient(#444, #111);
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        -moz-box-shadow: 0 2px 1px #9c9c9c;
+        -webkit-box-shadow: 0 2px 1px #9c9c9c;
+        box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li
+{
+        float: left;
+        padding: 0 0 10px 0;
+        position: relative;
+}
+
+#menu a
+{
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        color: #999;
+        text-transform: uppercase;
+        font: bold 12px/25px Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a
+{
+        color: #fafafa;
+}
+
+*html #menu li a:hover /* IE6 */
+{
+        color: #fafafa;
+}
+
+#menu li:hover > ul
+{
+        display: block;
+}
+
+/* Submenu */
+
+#menu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child
+{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a
+{
+    padding: 10px;
+        height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+        text-transform: none;
+}
+
+*html #menu ul a /* IE6 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a /* IE7 */
+{
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover
+{
+    background: #0186ba;
+        background: -moz-linear-gradient(#04acec,  #0186ba);
+        background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+        background: -webkit-linear-gradient(#04acec,  #0186ba);
+        background: -o-linear-gradient(#04acec,  #0186ba);
+        background: -ms-linear-gradient(#04acec,  #0186ba);
+        background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a
+{
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after
+{
+    border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+#nav{
+	list-style:none;
+	/* Clear floats */
+	float:left;
+	width:100%;
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;
+	*/
+}
+#nav li{
+	float:left;
+	position:relative;
+}
+#nav a{
+	display:block;
+	text-decoration:none;
+}
+#nav a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	
+}
+
+/*#menu:after
+{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}*/
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */

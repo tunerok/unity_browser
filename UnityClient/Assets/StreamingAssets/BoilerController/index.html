@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="state.js"></script>
+</head>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        SwitchPage('main');
+        setInterval(request_periodical_update, 1000);
+    }, false);
+</script>
+
+<body>
+    <div id="main" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <a class="normalbutton" onClick="Navigate('oilpumpState','')">Oil pumps</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="normalbutton" onClick="Navigate('waterpumpselector','')">Water pumps</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="waterpumpselector" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <a class="normalbutton" onClick="Navigate('feedpumpState','')">FEED PUMP</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="normalbutton" onClick="Navigate('circpumpState','')">CIRC. PUMP</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="oilpumpState" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>FO PUMP1</td>
+                <td data-hint='control' data-name='oil1'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','oil1')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='oil1'>OFF</td>
+            </tr>
+            <tr>
+                <td>FO PUMP1</td>
+                <td data-hint='control' data-name='oil2'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','oil2')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='oil2'>OFF</td>
+            </tr>
+        </table>
+    </div>
+    <div id="feedpumpState" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>FEED PUMP 1</td>
+                <td data-hint='control' data-name='feed1'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','feed1')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='feed1'>OFF</td>
+            </tr>
+            <tr>
+                <td>FEED PUMP 2</td>
+                <td data-hint='control' data-name='feed2'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','feed2')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='feed2'>OFF</td>
+            </tr>
+        </table>
+    </div>
+    <div id="circpumpState" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>CIRC PUMP1</td>
+                <td data-hint='control' data-name='circ1'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','circ1')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='circ1'>OFF</td>
+            </tr>
+            <tr>
+                <td>CIRC PUMP2</td>
+                <td data-hint='control' data-name='circ2'>STOP</td>
+                <td>
+                    <a class="togglebutton" onClick="Navigate('pumpControl','circ2')">Mode</a>
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td data-hint='state' data-name='circ2'>OFF</td>
+            </tr>
+        </table>
+    </div>
+    <div id="pumpControl" style="display: none">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <a id="Start" class="togglebutton" onClick="SwitchPump(this.id)">Start</a>
+                </td>
+                <td>
+                    <a id="Stop" class="togglebutton" onClick="SwitchPump(this.id)">Stop</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a id="StBy" class="togglebutton" onClick="SwitchPump(this.id)">St-By</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <table style="width:100%">
+            <tr>
+                <td style="width:70%">&nbsp;</td>
+                <td>
+                    <a id="backbutton" class="normalbutton" onClick="NavigateBack();">Back</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <sc>
+</body>
+
+</html>

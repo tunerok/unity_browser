@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityClient", "UnityClient.csproj", "{A4F48336-4464-8EC5-774B-4DE9B9E8D63A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityClient.Editor", "UnityClient.Editor.csproj", "{B4B22F55-01C2-61A0-FE5D-CED04A59893D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4F48336-4464-8EC5-774B-4DE9B9E8D63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F48336-4464-8EC5-774B-4DE9B9E8D63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F48336-4464-8EC5-774B-4DE9B9E8D63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F48336-4464-8EC5-774B-4DE9B9E8D63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B22F55-01C2-61A0-FE5D-CED04A59893D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B22F55-01C2-61A0-FE5D-CED04A59893D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B22F55-01C2-61A0-FE5D-CED04A59893D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B22F55-01C2-61A0-FE5D-CED04A59893D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
