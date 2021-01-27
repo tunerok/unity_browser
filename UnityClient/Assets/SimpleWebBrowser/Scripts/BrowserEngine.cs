@@ -141,7 +141,7 @@ namespace SimpleWebBrowser
             _enableGPU = enableGPU;
 
             if (BrowserTexture == null) {
-                BrowserTexture = new Texture2D(kWidth, kHeight, TextureFormat.BGRA32, false, true);
+                BrowserTexture = new Texture2D(kWidth, kHeight, TextureFormat.BGRA32, false);
                 if(OnTextureObjectUpdated!=null)
                     OnTextureObjectUpdated(BrowserTexture);
             }
