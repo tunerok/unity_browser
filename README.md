@@ -2,7 +2,7 @@
 Open source Unity3d web browser created by Vitaly Chashin https://bitbucket.org/vitaly_chashin/simpleunitybrowser and fixed buld crashes by Stulov Dmitry https://bitbucket.org/ShadowTeolog/simpleunitybrowser. 
 
 ## Basic setup
-Import the package to Unity. There will be a few folders in Assets/SimpleWebBrowser. You can move/rename all of them, but in case of Assets/SimpleWebBrowser/PluginServer you will need to change the runtime and deployment paths in Scripts/BrowserEngine.cs and in Editor/BrowserPostBuild.cs:
+Import the package to Unity or just open test.unity file. There will be a few folders in Assets/SimpleWebBrowser. You can move/rename all of them, but in case of Assets/SimpleWebBrowser/PluginServer you will need to change the runtime and deployment paths in Scripts/BrowserEngine.cs and in Editor/BrowserPostBuild.cs:
 ```C#
  public void InitPlugin(int width, int height, string sharedfilename, int port, string initialURL)
         {
